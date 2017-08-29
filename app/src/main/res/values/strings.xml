@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Store Inventory Project</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Label for overflow menu option that inserts fake product data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Test Data</string>
+
+    <!-- Label for overflow menu option that deletes all Product data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Products</string>
+
+    <!-- Label for editor menu option to save product and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current Product [CHAR LIMIT=20] -->
+    <string name="action_delete_item">Delete Product</string>
+
+    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_product_info">Product Info: </string>
+
+    <!-- Label for supplier information in the editor [CHAR LIMIT=30] -->
+    <string name="category_suppliers">Suppliers</string>
+
+    <!-- Label for measurement information in the editor [CHAR LIMIT=30] -->
+    <string name="category_email">Email Address</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_label">Product Label</string>
+
+    <string name="hint_product_description">Description</string>
+
+    <string name="hint_product_price">Price in US Dollars.</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_supplier">Supplier</string>
+
+    <!-- Label for dropdown menu option if the product's supplier is unknown [CHAR LIMIT=20] -->
+    <string name="supplier_unknown">Unknown</string>
+
+    <!-- Label for dropdown menu option if the product is male [CHAR LIMIT=20] -->
+    <string name="supplier_general_mills">General Mills, Inc.</string>
+
+    <!-- Label for dropdown menu option if the product is female [CHAR LIMIT=20] -->
+    <string name="supplier_core_mark">CORE-MARK INCORPORATED</string>
+
+    <string name="habit_date">From Date</string>
+    <string name="toast_save_msg">Inventory Data Saved</string>
+    <string name="toast_error_msg">Error: Data Not Saved.</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">HIIYYOOOO. Kind of a bit lonely in here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the product to add a product [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a products to your Store Inventory</string>
+
+    <!-- Title for the activity to add a new product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_product">Add a Product</string>
+
+    <string name="input_item_activity_add_product">Add a Item</string>
+
+    <string name="input_item_activity_edit_product">Edit Inventory</string>
+
+    <!-- Dialog message when product is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a product's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current product [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current product was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="input_delete_product_successful">Item(s) deleted</string>
+
+    <!-- Toast message in editor when current product has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="input_delete_product_failed">Error with deleting Item</string>
+
+    <!-- Dialog message to ask the product to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete product(s) from your Store Inventory?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current product [CHAR LIMIT=20] -->
+    <string name="delete_button_text">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="cancel_button_text">Cancel</string>
+
+    <!-- Text for blank "optional" data input for product[CHAR LIMIT=20] -->
+    <string name="unknown_product">Unknown Product</string>
+
+    <!-- Hint text for email input [CHAR LIMIT=20] -->
+    <string name="hint_email_address">Supplier Email Address</string>
+
+    <!-- [CHAR LIMIT=20] -->
+    <string name="product_quantity">Quantity</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="product_order_size">Order Size:</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="hint_product_order_amount">Enter Amount</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="place_order_button_text">Place Order</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="content_desc_insert_product_image">Insert product image by tapping placeholder image above</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="mainActivity_insert_product_failed">Error: Check input values. Product details cannot be empty.</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="mainActivity_insert_product_successful">Success: Data Saved</string>
+    <string name="empty_product_name_msg">Please Enter Product Name.</string>
+    <string name="empty_product_desc_msg">Please Enter Product Description.</string>
+    <string name="empty_product_price_msg">Please Enter Product Price</string>
+    <string name="empty_product_stock_msg">Please Enter Stock amount.</string>
+    <string name="empty_product_supplier_msg">Please Select Supplier Source</string>
+    <string name="empty_product_email_msg">Please enter supplier email</string>
+    <string name="empty_product_image_msg">Please enter product image.</string>
+    <string name="sale_button_text">Mark Sale</string>
+    <string name="list_item_price_label">Price: $</string>
+    <string name="list_item_stock_quantity_label">Stock Amount:</string>
+    <string name="list_item_supplier_label">Supplier:</string>
+    <string name="GENERAL_MILLS">General Mills</string>
+    <string name="input_activity_current_stock_label">Current Stock: </string>
+
+</resources>

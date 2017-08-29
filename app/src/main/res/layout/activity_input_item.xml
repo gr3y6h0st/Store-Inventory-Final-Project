@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputStoreItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <ImageView
+            android:id="@+id/input_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder_image"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/content_desc_insert_product_image"/>
+
+        <!-- Overview category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="@string/category_product_info"
+                style="@style/CategoryStyle" />
+
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+                <!-- date fields -->
+                <EditText
+                    android:id="@+id/input_product_name"
+                    android:hint="@string/hint_product_label"
+                    style="@style/InputActivityFieldStyle"/>
+
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/input_product_description"
+                    android:hint="@string/hint_product_description"
+                    android:inputType="textCapWords"
+                    style="@style/InputActivityFieldStyle" />
+
+                <!-- Breed field -->
+                <EditText
+                    android:id="@+id/input_product_price"
+                    style="@style/InputActivityFieldStyle"
+                    android:hint="@string/hint_product_price"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Supplier category -->
+        <LinearLayout
+            android:id="@+id/container_suppliers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="@string/category_suppliers"
+                style="@style/CategoryStyle" />
+
+            <!-- Input field -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <!-- Gender drop-down spinner -->
+                <Spinner
+                    android:id="@+id/spinner_supplier"
+                    android:layout_height="48dp"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="16dp"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Measurement category -->
+        <LinearLayout
+            android:id="@+id/container_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                android:text="@string/category_email"
+                style="@style/CategoryStyle" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Email field -->
+                <EditText
+                    android:id="@+id/input_email_address"
+                    android:hint="@string/hint_email_address"
+                    android:inputType="textEmailAddress"
+                    style="@style/InputActivityFieldStyle" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/styleHorizontalLayout"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/input_order_label"
+                style="@style/CategoryStyle"
+                android:text="@string/product_order_size" />
+
+            <EditText
+                android:id="@+id/input_order_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_product_order_amount" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/styleHorizontalLayout"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                style="@style/CategoryStyle"
+                android:layout_weight="2"
+                android:text="@string/input_activity_current_stock_label" />
+
+            <TextView
+                android:id="@+id/input_current_stock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/input_stock_minus_button"
+                style="@style/styleInputActivityButtons"
+                android:text="-"
+                android:textSize="24sp"/>
+
+            <EditText
+                android:id="@+id/input_stock_change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:hint="Current Stock" />
+
+            <Button
+                android:id="@+id/input_stock_plus_button"
+                style="@style/styleInputActivityButtons"
+                android:text="+"
+                android:textSize="24sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/activity_margin">
+
+            <Button
+                android:id="@+id/input_order_button"
+                style="@style/styleInputActivityButtons"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:text="@string/place_order_button_text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
